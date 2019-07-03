@@ -39,7 +39,7 @@ function holdBtnClick() {
     if(gameBoard.gamePlaying) {
         gameBoard.scores[gameBoard.activePlayer] += gameBoard.roundScore;
         document.querySelector('#score-' + gameBoard.activePlayer).textContent = gameBoard.scores[gameBoard.activePlayer];
-        if(gameBoard.scores[gameBoard.activePlayer] >= 20 ) {
+        if(gameBoard.scores[gameBoard.activePlayer] >= 69 ) {
             document.getElementById('name-' + gameBoard.activePlayer).textContent = 'Winner';
             $dice.style.display = 'none';
             document.querySelector('.player-' + gameBoard.activePlayer + '-panel').classList.add('winner');
