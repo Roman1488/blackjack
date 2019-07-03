@@ -153,3 +153,33 @@ i {
 
 .winner { background-color: #f7f7f7; }
 .winner .player-name { font-weight: 300; color: #EB4D4D; }
+
+@keyframes redFlash {
+    0% {
+        background: rgba(255, 0, 0 ,0);
+    }
+    50% {
+        background: rgba(255, 0, 0 ,1);
+    }
+    100% {
+        background: rgba(255, 0, 0 ,0);
+    }
+}
+@keyframes greenFlash {
+    0% {
+        background: rgba(63, 195, 128, 0);
+    }
+    50% {
+        background: rgba(63, 195, 128, 1);
+
+    }
+    100% {
+        background: rgba(63, 195, 128, 0);
+    }
+}
+.greenFlash {
+    animation: greenFlash linear .5s;
+}
+.flashRed {
+    animation: redFlash linear .5s;
+}
